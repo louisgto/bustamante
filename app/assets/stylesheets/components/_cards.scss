@@ -1,0 +1,51 @@
+
+// CARDS ----- for index
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  width: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+// CARDS ----- for workshop
+.cards-w {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+.card-category-w {
+  background-size: cover;
+  background-position: center;
+  height: 120px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+// CARDS ----- for opacity hover
+.opacity {
+  opacity: .8;
+}
+.opacity:hover {
+  opacity: 1;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,11 @@
+<h1 class="text-center mt-3">Les oeuvres</h1>
+
+<div class="container my-5 col-11 d-flex flex-column align-items-center ">
+  <div class="cards d-flex flex-wrap justify-content-between">
+    <% @artworks.each do |a| %>
+      <div class="card-category flex-column justify-content-end opacity my-2" style="background-image: url(https://picsum.photos/200/300?grayscale)">
+        <h2><%= a.title %></h2>
+      </div>
+    <% end %>
+  </div>
+</div>
