@@ -1,6 +1,7 @@
 class ArtworksController < ApplicationController
   def index
     @artworks = Artwork.all
+    @i = -1
   end
 
   def new

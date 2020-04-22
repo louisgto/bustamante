@@ -1,3 +1,44 @@
 .full {
   min-height: 100vh;
 }
+
+// ARTWORKS
+
+.modalSize {
+  height: 90vh;
+  width: 100%;
+}
+
+// Use Bootstrap breakpoints for consistency.
+$bootstrap-sm: 576px;
+$bootstrap-md: 768px;
+$bootstrap-lg: 992px;
+$bootstrap-xl: 1200px;
+// Crop thumbnail images.
+#gallery {
+
+  img {
+    height: 40vw;
+    object-fit: cover;
+
+    @media (min-width: $bootstrap-md) {
+      height: 25vw;
+    }
+
+    @media (min-width: $bootstrap-lg) {
+      height: 18vw;
+    }
+  }
+}
+// Crop images in lightbox.
+.carousel-item {
+
+  img {
+    height: 60vw;
+    object-fit: cover;
+
+    @media (min-width: $bootstrap-sm) {
+      height: 350px;
+    }
+  }
+}
