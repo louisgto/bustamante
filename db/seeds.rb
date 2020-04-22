@@ -7,24 +7,54 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Artwork.destroy_all
-puts "#{Artwork.count} artworks destroyed"
+puts "artworks destroyed"
 
 Artwork.create(
-  title: 'oeuvre 1'
+  title: 'oeuvre 1',
+  description: 'rien 100 rien'
 )
 Artwork.create(
-  title: 'oeuvre 2'
+  title: 'oeuvre 2',
+  description: "inspi d'ailleurs"
 )
 Artwork.create(
-  title: 'oeuvre 3'
+  title: 'oeuvre 3',
+  description: 'La tête dans les nuages'
 )
 Artwork.create(
-  title: 'oeuvre 4'
+  title: 'oeuvre 4',
+  description: 'Album Gratuit Vol. 4'
 )
 Artwork.create(
-  title: 'oeuvre 5'
+  title: 'oeuvre 5',
+  description: 'Je ne me vois pas briller'
 )
 Artwork.create(
-  title: 'oeuvre 6'
+  title: 'oeuvre 6',
+  description: "L'Ovni"
+)
+Artwork.create(
+  title: 'oeuvre 7',
+  description: 'Émotions'
+)
+Artwork.create(
+  title: 'oeuvre 8',
+  description: 'My World'
+)
+Artwork.create(
+  title: 'oeuvre 9',
+  description: 'Je tourne en rond'
+)
+Artwork.create(
+  title: 'oeuvre 10',
+  description: 'Je trouve pas le sommeil'
+)
+Artwork.create(
+  title: 'oeuvre 11',
+  description: 'Lacrizeomic'
+)
+Artwork.create(
+  title: 'oeuvre 12',
+  description: 'Dans ma paranoïa'
 )
 puts "#{Artwork.count} artworks created"
