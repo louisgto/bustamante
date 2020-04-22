@@ -16,6 +16,7 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'bootstrap'
 gem 'jquery-rails'
+gem 'simple_form'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
