@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get 'libertad', to: 'pages#dashboard',  as: :dashboard
 
   resources :artworks
+  resources :messages, except: :new
 end
