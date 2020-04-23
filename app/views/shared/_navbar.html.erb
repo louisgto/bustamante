@@ -1,8 +1,12 @@
-<div class="bg-white navbar navbar-nav navbar-expand-sm navbar-light sticky-top py-0">
-  <div class="container d-flex justify-content-around tabs-underlined">
-    <%= link_to "les oeuvres",artworks_path,  class: "nav-link nav-item nav-a tab-underlined" %>
-    <%= link_to "l'artiste",  artist_path,    class: "nav-link nav-item nav-a tab-underlined" %>
-    <%= link_to "l'atelier",  workshop_path,  class: "nav-link nav-item nav-a tab-underlined" %>
-    <%= link_to "contact",    contact_path,   class: "nav-link nav-item nav-a tab-underlined" %>
+<% unless controller.controller_name == "sessions" && controller.action_name == "new" || controller.action_name == 'dashboard' %>
+
+  <div class="bg-white navbar navbar-nav navbar-expand-sm navbar-light sticky-top py-0">
+    <div class="container d-flex justify-content-around tabs-underlined">
+      <%= link_to "les oeuvres",artworks_path,  class: "nav-link nav-item nav-a tab-underlined" %>
+      <%= link_to "l'artiste",  artist_path,    class: "nav-link nav-item nav-a tab-underlined" %>
+      <%= link_to "l'atelier",  workshop_path,  class: "nav-link nav-item nav-a tab-underlined" %>
+      <%= link_to "contact",    contact_path,   class: "nav-link nav-item nav-a tab-underlined" %>
+    </div>
   </div>
-</div>
+
+<% end %>

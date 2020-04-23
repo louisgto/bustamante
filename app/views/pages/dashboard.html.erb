@@ -1,2 +1,7 @@
-<h1 class="text-center mt-3">Dashboard</h1>
-<%= link_to "Ajouter une oeuvre", new_artwork_path, class: "" %>
+<h1 class="text-center my-3">Dashboard</h1>
+<div class="container">
+  <ul>
+    <li><%= link_to "Ajouter une oeuvre", new_artwork_path, class: "" %></li>
+    <li><%= link_to "Déconnexion", destroy_user_session_path, method: :delete, class: "" %></li>
+  </ul>
+</div>

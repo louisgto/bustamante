@@ -17,6 +17,8 @@ gem 'webpacker'
 gem 'bootstrap'
 gem 'jquery-rails'
 gem 'simple_form'
+gem 'devise'
+gem 'pundit'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
