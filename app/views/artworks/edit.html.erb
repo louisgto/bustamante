@@ -1,11 +1,11 @@
-<h1 class="text-center mt-3">Ajouter une oeuvre</h1>
+<h1 class="text-center mt-3">Modifier une oeuvre</h1>
 
 <div class="container col-6 my-5">
   <%= simple_form_for (@artwork) do |f| %>
     <%= f.input :title, class: "w-100" %>
     <%= f.input :category, class: "w-100" %>
     <div class="border my-3"></div>
-    <%= f.button :submit, "Ajouter", class: "btn btn-success w-100 mb-2" %>
+    <%= f.button :submit, "Modifier", class: "btn btn-success w-100 mb-2" %>
     <%= link_to "Back", :back, class: "btn btn-dark w-100" %>
   <% end %>
 </div>

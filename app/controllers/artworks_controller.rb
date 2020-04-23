@@ -29,14 +29,17 @@ class ArtworksController < ApplicationController
 
   def update
     @artwork = Artwork.find(params[:id])
-    @artwork.update
-    redirect_to artwork_path(@artwork)
+    if @artwork.update(artwork_params)
+      redirect_to dashboard_path
+    else
+      render :new
+    end
   end
 
   def destroy
     @artwork = Artwork.find(params[:id])
     @artwork.destroy
-    redirect_to artworks_path
+    redirect_to dashboard_path
   end
 
   private

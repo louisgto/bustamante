@@ -16,7 +16,7 @@ User.create(
   email: 'onizuka@gmail.com',
   password: 'password'
 )
-
+puts "#{User.count} user created"
 
 Artwork.create(
   title: 'oeuvre 1',

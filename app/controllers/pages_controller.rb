@@ -7,5 +7,8 @@ class PagesController < ApplicationController
 
   def workshop; end
 
-  def dashboard; end
+  def dashboard
+    @artworks = Artwork.all
+    @messages = Message.all
+  end
 end

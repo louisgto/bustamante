@@ -1,7 +1,38 @@
-<h1 class="text-center my-3">Dashboard</h1>
-<div class="container">
+<h1 class="text-center mt-3">Dashboard</h1>
+<div class="container my-5">
   <ul>
     <li><%= link_to "Ajouter une oeuvre", new_artwork_path, class: "" %></li>
     <li><%= link_to "Déconnexion", destroy_user_session_path, method: :delete, class: "" %></li>
   </ul>
+
+  <div class="row">
+    <div class="col-6 overflow-auto">
+      <h2 class="text-center my-3 tab-underlined active">Oeuvres</h2>
+      <% @artworks.each do |a| %>
+      <div class="notification">
+        <img src='https://kitt.lewagon.com/placeholder/users/arthur-littm' class="avatar-large" />
+        <div class="notification-content">
+          <p><strong><%= a.title %></strong></p>
+          <p><%= a.description %></p>
+        </div>
+        <div class="notification-actions">
+          <%= link_to "", edit_artwork_path(a), class: "fas fa-pencil-alt" %>
+          <%= link_to "", artwork_path(a), method: :delete, class: "fas fa-trash-alt" %>
+        </div>
+      </div>
+      <% end %>
+    </div>
+    <div class="col-6">
+      <h2 class="text-center my-3 tab-underlined">Messages</h2>
+      <% @messages.each do |m| %>
+      <div class="notification">
+        <div class="notification-content">
+          <p><strong><%= m.subject %></strong></p>
+          <p><%= m.containt %></p>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+
 </div>
