@@ -3,7 +3,16 @@ class ArtworksController < ApplicationController
     @artworks = Artwork.all
     @n = 900
     @i = -1
-    @j = -1
+    sql_query = " \
+        artworks.title ILIKE :query \
+        OR artworks.category ILIKE :query \
+      "
+
+    if params[:query].present?
+      @artworks = @artworks.where(sql_query, query: "%#{params[:query]}%")
+    else
+      @artworks
+    end
   end
 
   def new

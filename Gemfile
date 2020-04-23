@@ -16,9 +16,9 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'bootstrap'
 gem 'jquery-rails'
-gem 'simple_form'
 gem 'devise'
 gem 'pundit'
+gem 'pg_search', '~> 2.3.0'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
